@@ -10,21 +10,24 @@ The users of ssb.no wants an application that allows them to calculate how much 
 We will be prepping a few things for you by using NextJs, you may refactor and make as many adjustments as you'd like.
 
 **Optional tasks:**
+* Error handling for data fetching
 * Form validation
-* Tests
-* Visualization
-* Universal design
-* Authentication
+* Testing (e.g. functional, non-functional)
+* Visualization (e.g. highcharts)
+* Universal design and accessibility
+    * Does your solution follow design and accessibility principles? (e.g. WCAG)
+* Bonus: Authentication
+    * Add login and authorization to your application
 
 ### Resources
 There are two versions of the inflation calculator, where the calculator at the front page is a simpler version:
 [`Link to SSB's Front Page`](https://www.ssb.no/)
 [`Link to SSB's Inflation Calculator Page`](https://www.ssb.no/kalkulatorer/priskalkulator)
 
+[`Link to SSB's API Page`](https://www.ssb.no/api)
+
 You may use the components from our design system, or use your own styling for the calculator:
 [`Link to SSB's Component Library Repository`](https://github.com/statisticsnorway/ssb-component-library)
-
-[`Link to SSB's API Page`](https://www.ssb.no/api)
 
 ## Getting Started
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
