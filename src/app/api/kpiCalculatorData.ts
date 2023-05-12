@@ -23,7 +23,7 @@ const kpiYearQuery = {
     "response": {
         "format": "json-stat"
     }
-    }
+}
 
 export async function fetchKpiYearData() {
   const res = await fetch(kpiYearDatasetURL, {
@@ -72,7 +72,7 @@ const kpiMonthQuery = {
     "response": {
       "format": "json-stat"
     }
-  }
+}
 
 export async function fetchKpiMonthData() {
     const res = await fetch(kpiMonthDatasetURL, {

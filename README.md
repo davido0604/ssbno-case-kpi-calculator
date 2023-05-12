@@ -24,6 +24,8 @@ There are two versions of the inflation calculator, where the calculator at the 
 You may use the components from our design system, or use your own styling for the calculator:
 [`Link to SSB's Component Library Repository`](https://github.com/statisticsnorway/ssb-component-library)
 
+[`Link to SSB's API Page`](https://www.ssb.no/api)
+
 ## Getting Started
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
