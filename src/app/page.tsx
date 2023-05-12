@@ -1,94 +1,32 @@
-import Image from 'next/image'
-import styles from './page.module.css'
-
 export default function Home() {
+  // This is a placeholder. You may alter as much as you'd like.
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
+    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+      <div className="z-10 w-full max-w-5xl items-center justify-between">
+      <h1>Beregn prisendring</h1>
+      <p>Regn ut hvor mye prisene har endret seg. Kalkulatoren er basert på <a href="https://www.ssb.no/kpi">konsumprisindeksen</a>.</p>
+      <form>
         <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
+          <label htmlFor="amount">Skriv inn beløp</label>
+          <input type="text" id="amount" name="amount" required />
         </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://beta.nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+        <p>
+          <label htmlFor="fromYear">Fra år (åååå)</label>
+          <input type="text" id="fromYear" name="fromYear" required />
+          <label htmlFor="fromMonth">Velg måned</label>
+          <input type="text" id="fromMonth" name="fromMonth" required />
+        </p>
+        <p>
+          <label htmlFor="toYear">Til år (åååå)</label>
+          <input type="text" id="toYear" name="toYear" required />
+          <label htmlFor="toMonth">Velg måned</label>
+          <input type="text" id="toMonth" name="toMonth" required />
+        </p>
+        <p>
+          <button type="submit">Se prisendring</button>
+        </p>
+      </form>
+      <a href="https://www.ssb.no/kalkulatorer/priskalkulator/om-priskalkulatoren">Les om kalkulatoren</a>
       </div>
     </main>
   )
